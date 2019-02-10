@@ -1,0 +1,60 @@
+﻿@model MvcPhones.Models.Phone
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Phone</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Storage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Storage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OperatingSystem)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OperatingSystem)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrier)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Carrier)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
